@@ -1,7 +1,7 @@
-repo_name: 'monarch-initiative/cern_electron_recoil'
+repo_name: 'glass-ships/cern_electron_recoil'
 repo_url: 'https://github.com/glass-ships/cern-electron-recoil'
 site_name: 'Cern-Electron-Recoil'
-site_url: 'monarch-initiative.github.io/cern_electron_recoil/'
+site_url: 'https://glass-ships.github.io/cern_electron_recoil/'
 
 ### Optional: Uncomment the following line to customize the navigation bar
 # nav:
