@@ -39,7 +39,7 @@ skip-string-normalization = true
 
 [tool.ruff]
 line-length = 120
-extend-ignore = [
+ignore = [
     "D100", # `missing-module-docstring`
     "D101", # `missing-function-docstring`
     "D102", # `missing-method-docstring`
