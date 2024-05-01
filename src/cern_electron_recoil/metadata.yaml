@@ -5,7 +5,7 @@
 id:  'CURIE for the project'
 name: 'cern_electron_recoil'
 ingest_title: 'cern_electron_recoil'
-ingest_url: 'https://github.com/glass-ships/cern-electron-recoil'
+ingest_url: 'https://github.com/monarch-initiative/cern_electron_recoil'
 description: 'An example project using monarch ingest cookiecutter.'
 # source: 'Possibly replaced by provided_by'
 provided_by: 'cern '

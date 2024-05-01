@@ -69,11 +69,12 @@ test: download
 
 .PHONY: download
 download:
-	$(RUN) cern_electron_recoil download
+	$(RUN) ingest download
 
 .PHONY: run
 run:
-	$(RUN) cern_electron_recoil transform
+	$(RUN) ingest transform
+	$(RUN) bash scripts/generate-report.py
 
 
 ### Linting, Formatting, and Cleaning ###

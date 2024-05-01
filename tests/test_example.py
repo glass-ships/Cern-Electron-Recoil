@@ -1,8 +1,18 @@
-import pytest
+"""
+An example test file for the transform script.
+
+It uses pytest fixtures to define the input data and the mock koza transform. 
+The test_example function then tests the output of the transform script.
+
+See the Koza documentation for more information on testing transforms:
+https://koza.monarchinitiative.org/Usage/testing/
+"""
+
+import pytest 
 
 from koza.utils.testing_utils import mock_koza
 
-
+# Define the ingest name and transform script path
 INGEST_NAME = "cern_electron_recoil"
 TRANSFORM_SCRIPT = "./src/cern_electron_recoil/transform.py"
 
