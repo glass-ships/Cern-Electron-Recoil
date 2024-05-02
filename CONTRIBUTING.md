@@ -6,7 +6,7 @@ When contributing to this repository, please first discuss the changes you wish 
 
 ### Reporting bugs or making feature requests
 
-To report a bug or suggest a new feature, please go to the [monarch-initiative/cern_electron_recoil issue tracker](https://github.com/monarch-initiative/cern_electron_recoil/issues), as we consolidate issues there.
+To report a bug or suggest a new feature, please go to the [glass-ships/Cern-Electron-Recoil issue tracker](https://github.com/glass-ships/Cern-Electron-Recoil/issues), as we consolidate issues there.
 
 Please supply enough details to the developers to enable them to verify and troubleshoot your issue:
 
