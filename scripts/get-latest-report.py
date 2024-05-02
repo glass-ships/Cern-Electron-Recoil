@@ -2,21 +2,33 @@ import requests
 import json
 
 
-def get_latest_release_file(user, repo, filename):
-    url = f"https://api.github.com/repos/monarch-initiative/cern_electron_recoil/releases/latest"
+def main():
+    url = "https://api.github.com/repos/monarch-initiative/cern_electron_recoil/releases/latest"
+    
+    # Get the latest release from the GitHub API
     response = requests.get(url)
+    if response.status_code != 200:
+        raise Exception(
+            f"\n\tFailed to get latest release from {url}\n\tStatus Code: {response.status_code} - {response.text}"
+        )
     data = json.loads(response.text)
 
+    # Get the download URLs for the reports
+    reports = {}
     for asset in data["assets"]:
-        if asset["name"] == "report.md":
+        report_name = asset["name"]
+        if "report" in asset["name"].split("_"):
             file_url = asset["browser_download_url"]
-            return file_url
+            reports[report_name] = file_url
 
-    return None
+    if not reports:
+        raise Exception("No reports found in the latest release")
 
+    # Download the reports
+    for fn, url in reports:
+        response = requests.get(url)
+        output_fn = "_".join(fn.split('_')[:-1])
+        with open(f"docs/{output_fn}", "wb") as f:
+            f.write(response.content)
 
-# Usage
-user = "username"
-repo = "repository"
-filename = "file.ext"
-print(get_latest_release_file(user, repo, filename))
+print(main())
