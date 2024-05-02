@@ -2,7 +2,6 @@ import requests
 import json
 
 
-# https://github.com/monarch-initiative/cern_electron_recoil/releases/latest/download/report.md
 def get_latest_release_file(user, repo, filename):
     url = f"https://api.github.com/repos/monarch-initiative/cern_electron_recoil/releases/latest"
     response = requests.get(url)

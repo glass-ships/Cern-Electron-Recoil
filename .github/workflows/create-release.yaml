@@ -7,6 +7,8 @@ name: Create Release
 
 on:
   workflow_dispatch:
+  release:
+    types: [published]
 
 jobs:
   create-release:
@@ -30,6 +32,12 @@ jobs:
         run: poetry install --no-interaction
 
       - name: Run Transform
-        run: poetry run ingest transform
+        run: |
+          poetry run ingest transform
+          poetry run python scripts/generate-rdf.py
 
-      
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            output/*
