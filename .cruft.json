@@ -1,14 +1,15 @@
 {
   "template": "git@github.com:glass-ships/cookiecutter-monarch-ingest.git",
-  "commit": "568d92c6e24fc2c2c99784ade90d793804117957",
+  "commit": "816d77c6b0fdc2bb373dcb4fbe5b0a438f1af31e",
   "checkout": null,
   "context": {
     "cookiecutter": {
       "github_org_name": "glass-ships",
       "project_name": "Cern Electron Recoil",
       "project_description": "An example project using monarch ingest cookiecutter.",
+      "__repo_name": "Cern-Electron-Recoil",
       "__project_slug": "cern_electron_recoil",
-      "__project_url": "https://github.com/glass-ships/cern_electron_recoil",
+      "__project_url": "https://github.com/glass-ships/Cern-Electron-Recoil",
       "ingest_source": "cern",
       "ingest_type": "electron_recoil",
       "__ingest_name": "cern_electron_recoil",
