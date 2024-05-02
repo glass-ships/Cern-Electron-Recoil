@@ -1,6 +1,0 @@
-category	subject_prefix	predicate	object_prefix	count_star()
-biolink:Association	entity_1	biolink:related_to	entity_6	1
-biolink:Association	entity_2	biolink:related_to	entity_7	1
-biolink:Association	entity_3	biolink:related_to	entity_8	1
-biolink:Association	entity_4	biolink:related_to	entity_9	1
-biolink:Association	entity_5	biolink:related_to	entity_10	1
