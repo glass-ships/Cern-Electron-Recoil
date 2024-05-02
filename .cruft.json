@@ -1,6 +1,6 @@
 {
   "template": "git@github.com:glass-ships/cookiecutter-monarch-ingest.git",
-  "commit": "6223db5a05cdf28c482fdb3b7be21e12734b1ef8",
+  "commit": "0eb72623097b131ab296084041c66eeefaa0165e",
   "checkout": null,
   "context": {
     "cookiecutter": {
