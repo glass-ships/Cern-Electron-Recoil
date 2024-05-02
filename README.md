@@ -1,6 +1,6 @@
 # Cern-Electron-Recoil
 
-| [Documentation](https://glass-ships.github.io/cern-electron-recoil) |
+| [Documentation](https://glass-ships.github.io/Cern-Electron-Recoil) |
 
 An example project using monarch ingest cookiecutter.
 
