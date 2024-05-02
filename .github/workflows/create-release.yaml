@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Transform
         run: |
-          poetry run ingest transform
+          make run
           poetry run python scripts/generate-rdf.py
 
       - name: Create Release
