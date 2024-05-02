@@ -36,8 +36,12 @@ jobs:
           make run
           poetry run python scripts/generate-rdf.py
 
+      - name: Dynamically set MY_DATE environment variable
+        run: echo "DATE=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ env.DATE }}
           files: |
             output/*
