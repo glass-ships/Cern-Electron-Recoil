@@ -31,8 +31,8 @@ jobs:
 
       - name: Build Documentation
         run: |
-          make docs
           poetry run python scripts/get-latest-report.py
+          make docs
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
